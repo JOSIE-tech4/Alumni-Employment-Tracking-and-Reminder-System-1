@@ -33,6 +33,16 @@ if (!empty($profile_info)) {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
 // Determine if profile needs completion or annual update
 $needs_profile_update = empty($profile_info) || ($profile_info && ($profile_info['last_profile_update'] === null || strtotime($profile_info['last_profile_update'] . ' +1 year') <= time()));
 
